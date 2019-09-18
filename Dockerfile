@@ -1,4 +1,4 @@
-FROM debian:stable-slim as stepone
+FROM debian:stable-slim
 #variaveis
 ENV OMNIDB_VERSION=2.16.0
 ENV SERVICE_USER=omnidb

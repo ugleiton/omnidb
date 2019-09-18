@@ -1,4 +1,4 @@
-Docker container based on Debian linux running **OmniDB 2.15.0** with oracle client for easy database management via web interface.
+Docker container based on Debian linux running **OmniDB 2.16.0** with ORACLE CLIENT for easy database management via web interface.
 
 
 **Creating a container**

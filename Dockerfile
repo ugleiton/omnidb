@@ -24,9 +24,9 @@ RUN  adduser --system --home /${SERVICE_USER} --no-create-home ${SERVICE_USER} \
   && chmod -R g+w /${SERVICE_USER} \
   && apt-get install -y unzip dumb-init \
   && if [ ! -e '/bin/systemctl' ]; then ln -s /bin/echo /bin/systemctl; fi \
-  && curl -fsSLk https://github.com/OmniDB/OmniDB/releases/download/${OMNIDB_VERSION}/omnidb-server_${OMNIDB_VERSION}-debian-amd64.deb --output omnidb-server_${OMNIDB_VERSION}-debian-amd64.deb \
-  && dpkg -i omnidb-server_${OMNIDB_VERSION}-debian-amd64.deb \
-  && rm -rf omnidb-server_${OMNIDB_VERSION}-debian-amd64.deb \
+  && curl -fsSLk https://github.com/OmniDB/OmniDB/releases/download/${OMNIDB_VERSION}/omnidb-server_${OMNIDB_VERSION}_linux_x86_64.deb --output omnidb-server_${OMNIDB_VERSION}_linux_x86_64.deb \
+  && dpkg -i omnidb-server_${OMNIDB_VERSION}_linux_x86_64.deb \
+  && rm -rf omnidb-server_${OMNIDB_VERSION}_linux_x86_64.deb \
   && apt-get clean
 
 USER ${SERVICE_USER}

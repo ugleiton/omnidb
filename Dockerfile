@@ -1,6 +1,6 @@
 FROM debian:stable-slim
 #variaveis
-ENV OMNIDB_VERSION=2.17.0
+ENV OMNIDB_VERSION=3.0.3b
 ENV SERVICE_USER=omnidb
 
 
